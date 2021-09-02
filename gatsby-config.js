@@ -12,6 +12,17 @@ module.exports = {
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    // `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          layout: `fullWidth`,
+          formats: [`auto`, `webp`],
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
