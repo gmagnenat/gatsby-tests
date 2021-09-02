@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 
 const Layout = ({ pageTitle, children }) => {
   return (
     <div>
-      <SEO />
+      <Seo />
       <nav className='w-full px-9'>
         <ul className='flex'>
           <li className='mr-2'>
