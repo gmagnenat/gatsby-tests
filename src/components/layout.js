@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import SEO from '../components/seo';
 
 const Layout = ({ pageTitle, children }) => {
   return (
     <div>
-      <title>{pageTitle}</title>
-      <nav>
-        <ul>
-          <li>
+      <SEO />
+      <nav className='w-full px-9'>
+        <ul className='flex'>
+          <li className='mr-2'>
             <Link to='/'>Home</Link>
           </li>
           <li>
@@ -15,8 +16,8 @@ const Layout = ({ pageTitle, children }) => {
           </li>
         </ul>
       </nav>
-      <main>
-        <h1>{pageTitle}</h1>
+      <main className='w-full px-9'>
+        <h1 className='text-5xl my-8'>{pageTitle}</h1>
         {children}
       </main>
     </div>
