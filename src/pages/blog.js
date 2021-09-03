@@ -1,14 +1,27 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 
-const BlogPage = () => {
+const BlogPage = ({ data }) => {
   return (
-    <div>
-      <Layout pageTitle='My Blog Posts'>
-        <p>My cool posts will go in here</p>
-      </Layout>
-    </div>
+    <Layout pageTitle='My Blog Posts'>
+      <ul>
+        {data.allFile.nodes.map((node) => (
+          <li key={node.name}>{node.name}</li>
+        ))}
+      </ul>
+    </Layout>
   );
 };
 
 export default BlogPage;
+
+export const query = graphql`
+  query {
+    allFile {
+      nodes {
+        name
+      }
+    }
+  }
+`;
