@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'Severus Snape',
-    titleTemplate: '%s · The Real Hero',
+    title: 'Gwenaël Magnenat',
+    titleTemplate: '%s · Gatsby Starter Website',
     description:
-      'Hogwarts Potions master, Head of Slytherin house and former Death Eater.',
+      'Gatsby Starter Website with settings to hit 100% in lighthouse',
     url: 'https://www.doe.com', // No trailing slash allowed!
     image: '/images/snape.jpg', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@occlumency',
+    twitterUsername: '@magnenatg',
   },
   plugins: [
     `gatsby-plugin-gatsby-cloud`,
@@ -18,8 +18,10 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          layout: `fullWidth`,
           formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+          quality: 50,
+          backgroundColor: `transparent`,
         },
       },
     },

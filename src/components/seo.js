@@ -60,6 +60,7 @@ SEO.propTypes = {
   image: PropTypes.string,
   article: PropTypes.bool,
 };
+
 SEO.defaultProps = {
   title: null,
   description: null,

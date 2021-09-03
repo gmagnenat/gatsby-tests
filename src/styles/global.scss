@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.list {
+  @apply my-6;
+
+  .list-item {
+    @apply py-2;
+  }
+}

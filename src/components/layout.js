@@ -11,13 +11,18 @@ const Layout = ({ pageTitle, children }) => {
           <li className='mr-2'>
             <Link to='/'>Home</Link>
           </li>
-          <li>
+          <li className='mr-2'>
             <Link to='/about'>About</Link>
+          </li>
+          <li className='mr-2'>
+            <Link to='/blog'>Blog</Link>
           </li>
         </ul>
       </nav>
       <main className='w-full px-9'>
-        <h1 className='text-5xl my-8'>{pageTitle}</h1>
+        <h1 className='text-5xl my-8 text-gray-400 font-bold my-3 mx-0'>
+          {pageTitle}
+        </h1>
         {children}
       </main>
     </div>
