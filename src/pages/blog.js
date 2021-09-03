@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle='Learning Three.js log book'>
-      <ul>
+      <div className='blog-posts'>
         {data.allMdx.nodes.map((node) => (
           <article key={node.id}>
             <h2 className='text-4xl'>{node.frontmatter.title}</h2>
@@ -16,7 +16,7 @@ const BlogPage = ({ data }) => {
             </div>
           </article>
         ))}
-      </ul>
+      </div>
     </Layout>
   );
 };

@@ -15,10 +15,17 @@ h3 {
 }
 
 a {
-  color: lightseagreen;
+  @apply text-purple-700;
 }
 
 p {
   @apply text-lg;
   margin-bottom: 1rem;
+}
+
+.blog-posts {
+  a {
+    @apply text-xl;
+    line-height: 48px;
+  }
 }
