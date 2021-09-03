@@ -20,7 +20,7 @@ const Layout = ({ pageTitle, children }) => {
         </ul>
       </nav>
       <main className='w-full px-9'>
-        <h1 className='text-5xl my-8 text-gray-500 font-bold mx-0'>
+        <h1 className='text-5xl my-8 text-gray-800 font-bold mx-0'>
           {pageTitle}
         </h1>
         {children}

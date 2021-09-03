@@ -11,7 +11,7 @@ const BlogPage = ({ data }) => {
           <article key={node.id}>
             <h2 className='text-4xl'>{node.frontmatter.title}</h2>
             <p>Posted: {node.frontmatter.datePublished}</p>
-            <div className='my-3 border-b-2 border-gray-500 pb-5'>
+            <div className='my-3 border-b-2 border-gray-800 pb-5'>
               <MDXRenderer>{node.body}</MDXRenderer>
             </div>
           </article>
