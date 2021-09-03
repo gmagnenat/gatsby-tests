@@ -9,3 +9,16 @@
     @apply py-2;
   }
 }
+
+h3 {
+  @apply text-2xl;
+}
+
+a {
+  color: lightseagreen;
+}
+
+p {
+  @apply text-lg;
+  margin-bottom: 1rem;
+}

@@ -41,5 +41,22 @@ module.exports = {
         path: `${__dirname}/blog`,
       },
     },
+    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-remark-prismjs`,
+      options: {
+        classPrefix: 'language-',
+        inlineCodeMarker: null,
+        aliases: {},
+        showLineNumbers: false,
+        noInlineHighlight: false,
+        prompt: {
+          user: 'root',
+          host: 'localhost',
+          global: false,
+        },
+        escapeEntities: {},
+      },
+    },
   ],
 };
