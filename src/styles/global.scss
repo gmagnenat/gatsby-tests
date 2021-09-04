@@ -2,12 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Minipax Regular', Georgia, 'Times New Roman', Times, serif;
+  background-color: whitesmoke;
+}
+
 .list {
   @apply my-6;
 
   .list-item {
     @apply py-2;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Karrik Italic', Verdana, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
 }
 
 h3 {

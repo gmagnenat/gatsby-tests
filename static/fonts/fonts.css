@@ -1,0 +1,17 @@
+@layer base {
+  @font-face {
+    font-family: Karrik;
+    font-weight: 400;
+    src: url(/karrik/Karrik-Regular.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Karrik Italic';
+    font-weight: 400;
+    src: url(/karrik/Karrik-Italic.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Minipax Regular';
+    font-weight: 400;
+    src: url(/minipax/Minipax-Regular.woff) format('woff');
+  }
+}

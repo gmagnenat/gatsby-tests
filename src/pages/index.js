@@ -13,6 +13,8 @@ const IndexPage = () => {
           Optimise the image plugin to load resized image depending on viewport
           size
         </li>
+        <li>Add custom font-face</li>
+        <li>Handle FOUC for font loading</li>
       </ul>
       <StaticImage
         alt='Tre Cime, Dolimites, Italia'

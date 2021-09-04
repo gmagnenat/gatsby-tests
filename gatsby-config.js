@@ -41,6 +41,23 @@ module.exports = {
         path: `${__dirname}/blog`,
       },
     },
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        mode: 'async',
+        enableListener: true,
+        preconnect: ['https://fonts.gstatic.com'],
+        /* Self-hosted fonts config. Add font files and font CSS files to "static" folder */
+        custom: [
+          {
+            /* Exact name of the font as defied in @font-face CSS rule */
+            name: ['Karrik', 'Karrik Italik', 'Minipax Regular'],
+            /* Path to the font CSS file inside the "static" folder with @font-face definition */
+            file: '/fonts/fonts.css',
+          },
+        ],
+      },
+    },
     `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-remark-prismjs`,
