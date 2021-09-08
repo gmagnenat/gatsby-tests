@@ -30,8 +30,24 @@ h3 {
   @apply text-2xl;
 }
 
+.main-navigation {
+  a {
+    @apply uppercase font-bold;
+    font-family: 'Karrik Italic', Verdana, Tahoma, sans-serif;
+  }
+}
+
+a.primary-button {
+  @apply uppercase font-bold;
+  font-family: 'Karrik Italic', Verdana, Tahoma, sans-serif;
+}
+
 a {
-  @apply text-purple-700;
+  @apply text-blue-600;
+
+  :hover {
+    @apply text-blue-400;
+  }
 }
 
 p {
