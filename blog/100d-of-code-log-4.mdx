@@ -1,0 +1,41 @@
+---
+title: 'Log #4'
+datePublished: '2021-09-08'
+author: 'Gwenaël Magnenat'
+---
+
+Un objet peut être transformé avec 4 propriétés différentes
+
+- postion
+- scale
+- rotation
+- quaternion
+
+**position**, 3 axes, x, y, z pour positionner un object dans l'espace.
+Ce n'est pas un objet, c'est un vecteur de la classe **Vector3**
+
+**Optenir la longeur d'un vecteur**
+
+```
+console.log(mesh.position.length());
+```
+
+**Optenir la distance d'un vecteur à un autre**
+
+```
+console.log(mesh.position.distance(camera.position));
+```
+
+**Normaliser un vecteur** mettre les valeurs à 1 en gardant la position
+
+```
+console.log(mesh.position.normalize())
+```
+
+**Axes Helper**
+Affichage de trois lignes correspondant aux axes x, y, z
+
+```
+const axesHelper = new THREE.AxesHelper(2);
+scene.add(axesHelper);
+```
