@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Gwenaël Magnenat',
-    titleTemplate: '%s · Gatsby Starter Website',
-    description:
-      'Gatsby Starter Website with settings to hit 100% in lighthouse',
+    titleTemplate: '%s · 100%',
+    description: 'Learning 3D and animation on the web',
     url: 'https://www.doe.com', // No trailing slash allowed!
     image: '/images/snape.jpg', // Path to your image you placed in the 'static' folder
     twitterUsername: '@magnenatg',
