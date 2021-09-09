@@ -1,0 +1,42 @@
+---
+title: 'Log #5'
+datePublished: '2021-09-09'
+author: 'Gwenaël Magnenat'
+---
+
+## Scale
+
+C'est aussi un objet Vector3. Par défaut x, y, z sont égales à 1.  
+1 = pas de scale.
+
+    mesh.scale.x = 2
+    mesh.scale.y = 0.25
+    mesh.scale.z = 0.5
+
+    mesh.scale.set(2, 0.25, 0.5)
+
+.
+
+## Rotation
+
+La rotation n'est pas un object Vector3. C'est un Euler.  
+https://threejs.org/docs/#api/en/math/Euler  
+https://en.wikipedia.org/wiki/Euler_angles
+
+tourner l'axe x = comme un carousel  
+tourner l'axe y = rotation d'une roue de voiture  
+tourner l'axe z = rotation de l'hélice d'un avion (devant)
+
+Les valeurs sont exprimées en radians. Une demi rotation est égale à π (3,14159 rad).  
+En javascript : `Math.PI`
+
+En combinant les rotations on peut rencontrer des problèmes. L'ordre de rotation est important.  
+En changeant l'axe x, on change l'orientation des autres axes ce qui peut provoquer un bloquage de cardan (gimbal lock) https://fr.wikipedia.org/wiki/Blocage_de_cardan.
+
+On peut gérer l'ordre des rotations. A faire avant d'appliquer les rotations
+
+    /// par example
+    object.rotation.reorder('yxz')
+
+.  
+Pour un jeu FPS, on tournera d'abord la tête sur l'axe y (regarder à gauche, regarder à droite) puis on modifiera l'axe x (regarder en haut, regarder en bas).
