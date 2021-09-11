@@ -6,6 +6,9 @@ import BlogCard from '../../components/BlogCard';
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle='Log Book'>
+      <h4 className='mt-8 mb-6 lg:mb-12 font-semibold text-blue-600'>
+        Learning Logs
+      </h4>
       <section className='relative py-20'>
         <div className='container px-4 mx-auto'>
           <div className='flex flex-wrap -m-3 mb-16'>

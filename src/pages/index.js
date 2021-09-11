@@ -5,6 +5,9 @@ import { Link } from 'gatsby';
 const IndexPage = () => {
   return (
     <Layout pageTitle='Web / Technologies'>
+      <h4 className='mt-8 mb-6 lg:mb-12 font-semibold text-blue-600'>
+        Web / Technologies
+      </h4>
       <div className='flex flex-wrap items-center -mx-4'>
         <div className='w-full md:w-1/2 px-4 mb-6 md:mb-0'>
           <h2 className='mt-8 mb-6 lg:mb-12 text-4xl lg:text-5xl font-semibold'>

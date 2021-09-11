@@ -9,7 +9,7 @@ const BlogCard = ({ title, date, hero_image, hero_image_alt, slug }) => {
     <div className='w-full md:w-1/2 lg:w-1/3 p-3' key={title}>
       <div className='p-6 border rounded-xl'>
         <div className='relative h-52 mb-6'>
-          <span className='absolute top-0 right-0 mt-4 mr-4 text-xs text-white px-2 py-1 font-semibold bg-gray-600 bg-opacity-50 rounded-md uppercase'>
+          <span className='absolute top-0 right-0 mt-4 mr-4 text-xs text-white px-2 py-1 font-semibold bg-gray-800 bg-opacity-50 rounded-md uppercase z-10'>
             Development
           </span>
           <GatsbyImage
@@ -18,7 +18,7 @@ const BlogCard = ({ title, date, hero_image, hero_image_alt, slug }) => {
             alt={hero_image_alt}
           />
         </div>
-        <span className='inline-block mb-4 text-xs text-gray-500'>{date}</span>
+        <span className='inline-block mb-4 text-xs text-gray-600'>{date}</span>
         <div>
           <h2>
             <Link to={`/blog/${slug}`}>{title}</Link>

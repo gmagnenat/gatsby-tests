@@ -9,15 +9,35 @@ const BlogPost = ({ data }) => {
 
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>{data.mdx.frontmatter.date}</p>
-      <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
-      <p>
-        Photo Credit:{' '}
-        <a href={data.mdx.frontmatter.hero_image_credit_link}>
-          {data.mdx.frontmatter.hero_image_credit_text}
-        </a>
-      </p>
-      <MDXRenderer>{data.mdx.body}</MDXRenderer>
+      <section className='py-20'>
+        <div className='container px-4 mx-auto'>
+          <div className='h-96 mb-10'>
+            <GatsbyImage
+              className='w-full h-full object-cover rounded-lg'
+              image={image}
+              alt={data.mdx.frontmatter.hero_image_alt}
+            />
+            <p className='text-sm italic'>
+              Photo Credit:{' '}
+              <a href={data.mdx.frontmatter.hero_image_credit_link}>
+                {data.mdx.frontmatter.hero_image_credit_text}
+              </a>
+            </p>
+          </div>
+          <div className='max-w-2xl mx-auto'>
+            <h2 className='mb-5 text-3xl font-semibold font-heading'>
+              {data.mdx.frontmatter.title}
+            </h2>
+            <p className='text-normal text-blue-600 mb-10'>
+              {data.mdx.frontmatter.date}
+            </p>
+
+            <MDXRenderer className='mb-6 text-xl text-gray-500'>
+              {data.mdx.body}
+            </MDXRenderer>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
