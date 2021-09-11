@@ -24,13 +24,17 @@ Ce n'est pas un objet, c'est un vecteur de la classe **Vector3**
 
 # Optenir la longeur d'un vecteur
 
-    console.log(mesh.position.length());
+```javascript
+console.log(mesh.position.length());
+```
 
 <br />
 
 # Optenir la distance d'un vecteur à un autre
 
-    console.log(mesh.position.distance(camera.position));
+```javascript
+console.log(mesh.position.distance(camera.position));
+```
 
 <br />
 
@@ -38,7 +42,9 @@ Ce n'est pas un objet, c'est un vecteur de la classe **Vector3**
 
 mettre les valeurs à 1 en gardant la position
 
-    console.log(mesh.position.normalize())
+```javascript
+console.log(mesh.position.normalize());
+```
 
 <br />
 
@@ -46,5 +52,7 @@ mettre les valeurs à 1 en gardant la position
 
 Affichage de trois lignes correspondant aux axes x, y, z
 
-    const axesHelper = new THREE.AxesHelper(2);
-    scene.add(axesHelper);
+```javascript{numberLine: true}
+const axesHelper = new THREE.AxesHelper(2);
+scene.add(axesHelper);
+```
