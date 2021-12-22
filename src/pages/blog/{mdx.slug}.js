@@ -17,14 +17,17 @@ const BlogPost = ({ data }) => {
               image={image}
               alt={data.mdx.frontmatter.hero_image_alt}
             />
-            <p className='text-sm italic'>
+            <p className='text-xs text-gray-400 text-right font-thin'>
               Photo Credit:{' '}
-              <a href={data.mdx.frontmatter.hero_image_credit_link}>
+              <a
+                className='text-gray-400'
+                href={data.mdx.frontmatter.hero_image_credit_link}
+              >
                 {data.mdx.frontmatter.hero_image_credit_text}
               </a>
             </p>
           </div>
-          <div className='max-w-2xl mx-auto'>
+          <div className='w-full mx-auto'>
             <h2 className='mb-5 text-3xl font-semibold font-heading'>
               {data.mdx.frontmatter.title}
             </h2>
