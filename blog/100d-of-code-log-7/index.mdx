@@ -1,0 +1,46 @@
+---
+title: 'Log 7'
+date: '2021-12-23'
+hero_image: './pexels-scott-webb-2346594.jpg'
+hero_image_alt: 'Shapes And Pattern'
+hero_image_credit_text: 'Scott Webb'
+hero_image_credit_link: 'https://www.pexels.com/photo/shapes-and-pattern-2346594/'
+author: 'Gwenaël Magnenat'
+---
+
+## Scene graph
+
+Grouping things can become handy when we want to rotate or scale several objects together.
+If we build a house with walls and a roof we don't want to apply the transformations seperately on each elements.
+We can group all objects in a container.
+
+```javascript
+/**
+ * Objects
+ */
+const group = new THREE.Group();
+group.scale.y = 2;
+group.rotation.y = 0.2;
+scene.add(group);
+
+const cube1 = new THREE.Mesh(
+  new THREE.BoxGeometry(1, 1, 1),
+  new THREE.MeshBasicMaterial({ color: 0xff0000 })
+);
+cube1.position.x = -1.5;
+group.add(cube1);
+
+const cube2 = new THREE.Mesh(
+  new THREE.BoxGeometry(1, 1, 1),
+  new THREE.MeshBasicMaterial({ color: 0xff0000 })
+);
+cube2.position.x = 0;
+group.add(cube2);
+
+const cube3 = new THREE.Mesh(
+  new THREE.BoxGeometry(1, 1, 1),
+  new THREE.MeshBasicMaterial({ color: 0xff0000 })
+);
+cube3.position.x = 1.5;
+group.add(cube3);
+```
