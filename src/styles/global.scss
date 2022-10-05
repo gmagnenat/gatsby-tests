@@ -2,73 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Minipax Regular', Georgia, 'Times New Roman', Times, serif;
-  background-color: whitesmoke;
+h1 {
+	@apply text-3xl font-black;
 }
 
-.list {
-  @apply my-6;
-
-  .list-item {
-    @apply py-2;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Karrik Italic', Verdana, Tahoma, sans-serif;
-  text-transform: uppercase;
-  font-style: italic;
-}
-
-h3 {
-  @apply text-2xl;
-}
-
-.main-navigation {
-  a {
-    @apply uppercase font-bold;
-    font-family: 'Karrik Italic', Verdana, Tahoma, sans-serif;
-  }
-}
-
-a.primary-button {
-  @apply uppercase font-bold;
-  font-family: 'Karrik Italic', Verdana, Tahoma, sans-serif;
-}
-
-a {
-  @apply text-blue-600;
-
-  :hover {
-    @apply text-blue-400;
-  }
-}
-
-p {
-  @apply text-lg;
-  margin-bottom: 1rem;
-}
-
-.blog-posts {
-  a {
-    @apply text-xl;
-    line-height: 48px;
-  }
+h2 {
+	@apply text-2xl;
 }
 
 /* Adjust the position of the line numbers */
 .code-header {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .line-number {
-  padding-right: 0.5rem;
-  color: orangered;
+	padding-right: 0.8rem;
+	@apply text-red-300;
 }
